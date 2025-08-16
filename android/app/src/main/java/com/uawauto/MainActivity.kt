@@ -1,4 +1,4 @@
-package com.uawauto
+package com.uawauto.uaw
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate

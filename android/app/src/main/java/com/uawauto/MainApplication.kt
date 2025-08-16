@@ -1,4 +1,4 @@
-package com.uawauto
+package com.uawauto.uaw
 
 import android.app.Application
 import com.facebook.react.PackageList
