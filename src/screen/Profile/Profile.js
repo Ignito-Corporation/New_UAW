@@ -4,11 +4,9 @@ import {
   StyleSheet,
   View,
   TouchableOpacity,
-  Image,
   Alert,
   ScrollView,
 } from 'react-native';
-import ImageSelector from '../../component/ImageSelector';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { appColors } from '../../component/Color';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -39,11 +37,7 @@ export default class Profile extends Component {
     }
   }
 
-  handleImageSelect = (imageUris) => {
-    if (imageUris && imageUris.length > 0) {
-      this.setState({ selectedImage: imageUris[0] });
-    }
-  };
+ 
 
   handleLogout = () => {
     Alert.alert(
@@ -123,18 +117,13 @@ export default class Profile extends Component {
       <ScrollView>
       <View style={styles.container}>
         {/* Profile Image */}
-        <TouchableOpacity
-          onPress={() => this.imageSelectorRef?.show()}
+        <View
           style={styles.imageContainer}
         >
-          {selectedImage ? (
-            <Image source={{ uri: selectedImage }} style={styles.profileImage} />
-          ) : (
-            <View style={styles.dummyIcon}>
+         <View style={styles.dummyIcon}>
               <Icon name="person-circle-outline" size={120} color="#888" />
             </View>
-          )}
-        </TouchableOpacity>
+        </View>
 
         {/* Username & Mobile (dynamic) */}
         <Text style={styles.username}>{name || 'Guest User'}</Text>
@@ -166,12 +155,7 @@ export default class Profile extends Component {
           </TouchableOpacity>
         </View>
 
-        {/* ImageSelector Modal */}
-        <ImageSelector
-          ref={(ref) => (this.imageSelectorRef = ref)}
-          onImageSelected={this.handleImageSelect}
-          singleSelection={true}
-        />
+    
       </View>
       </ScrollView>
     );
