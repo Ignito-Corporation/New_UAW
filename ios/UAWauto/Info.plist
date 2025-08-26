@@ -23,7 +23,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>8</string>
+	<string>9</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -33,6 +33,24 @@
 		<key>NSAllowsLocalNetworking</key>
 		<true/>
 	</dict>
+	<key>UIAppFonts</key>
+	<array>
+	<string>AntDesign.ttf</string>
+	<string>Entypo.ttf</string>
+	<string>EvilIcons.ttf</string>
+	<string>Feather.ttf</string>
+	<string>FontAwesome.ttf</string>
+	<string>FontAwesome5_Brands.ttf</string>
+	<string>FontAwesome5_Regular.ttf</string>
+	<string>FontAwesome5_Solid.ttf</string>
+	<string>Foundation.ttf</string>
+	<string>Ionicons.ttf</string>
+	<string>MaterialIcons.ttf</string>
+	<string>MaterialCommunityIcons.ttf</string>
+	<string>SimpleLineIcons.ttf</string>
+	<string>Octicons.ttf</string>
+	<string>Zocial.ttf</string>
+	</array>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>This app needs access to your photo library to allow image upload and sharing.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
